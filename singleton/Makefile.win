@@ -1,0 +1,10 @@
+CC=g++
+OPT_FLAGS=-O2
+CFLAGS=-I. -fopenmp
+
+singleton: main.cpp Singleton.cpp
+     $(CC) $(OPT_FLAGS) $(CFLAGS) -o main.exe main.cpp Singleton.cpp
+
+
+clean:
+    rm main.exe
